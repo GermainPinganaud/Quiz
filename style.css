@@ -1,0 +1,16 @@
+body {
+  margin-left: 100px;
+  color: grey;
+  background-color: black;
+  font-family: 'Sigmar One', cursive;
+}
+
+select {
+  height: 3em;
+  width: 10em;
+}
+#input_number {
+  height: 3em;
+  width: 3em;
+
+}
