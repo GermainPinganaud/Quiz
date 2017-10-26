@@ -2,15 +2,27 @@ body {
   margin-left: 100px;
   color: grey;
   background-color: black;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 3em;
+}
+input {
+  margin-left: 50px;
+}
+h1, h3 {
+  color: white;
   font-family: 'Sigmar One', cursive;
 }
-
 select {
   height: 3em;
   width: 10em;
 }
 #input_number {
-  height: 3em;
-  width: 3em;
-
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1em;
+  width: 2em;
+}
+#sub_button {
+  font-size: 2em;
+  width: 500px;
+  height: 500px;
 }
