@@ -7,6 +7,11 @@ body {
 }
 input {
   margin-left: 50px;
+  height: 1em;
+  width: 1.5em;
+}
+.red_o {
+  color: #B92124;
 }
 h1, h3 {
   color: white;
@@ -19,7 +24,6 @@ select {
 #input_number {
   font-family: 'Gochi Hand', cursive;
   font-size: 1em;
-  width: 2em;
 }
 #sub_button {
   font-size: 2em;
