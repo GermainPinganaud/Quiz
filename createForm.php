@@ -37,15 +37,18 @@ function createInput($type, $name, $value = "no value", $label = "no label")
 //Mise en place d'un selectRadio
 
 
-function createSelectRadio($label, $subtitle, $options)
+function createSelectRadio($label, $subtitle, $name, $id, $options)
 {
-  $html = "<label>" . $label . "</label>"; //Creer une variable string permet la concatenation sur plusieurs lignes
-  $html .= "<p>" . $subtitle . "</p>";
-  foreach ($options as $key => $value)
+  $html = "<h3>" . $label . "</h3>"; //<h3>Quelle langue est parlée au Japon ?</h3>
+  $html .= "<p>" . $subtitle . "</p>";//<p>(Pour 1 point)</p>
+  // 1X options = 1X
+  foreach ($options as $key => $value)//
   {
-    $html .= "<input type='radio'" . $value["value"] . "'>" . $value['content'] . "</radio>";
+    $html .= "<input id='_$id' type='radio' name='$name' value='" . $value['value'] . "'><label for='_$id'>" . $value['content'] . "</label><br>";
+    //$html .= "<input type='radio' id='_$id' name='$name' value='"$value['value']"'><label for='_$id'>"$value['content']"</label><br>";
+    $id ++;
   }
-  $html .= "</select>";
+  $html .= "</br>";
   return $html;
 }
 
