@@ -6,8 +6,8 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>Quizz</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Sigmar+One" rel="stylesheet">
   </head>
   <body>
@@ -39,7 +39,7 @@
         ],
       ]);
       $id += 4;
-      echo createSelectradio('En Japonais, le mot "Japon" se prononce :', "toujours pour 1 point", "question_2", $id,
+      echo createSelectradio('En Japonais, le mot "Japon" se prononce :', "encore pour 1 point", "question_2", $id,
       [
         [
           "value" => "1",
@@ -50,12 +50,52 @@
           "content" => "Japan",
         ],
         [
-          "value" => "1",
+          "value" => "0",
           "content" => "Mitsubishi",
         ],
         [
           "value" => "0",
           "content" => "Zhongguo",
+        ],
+      ]);
+      $id += 4;
+      echo createSelectradio('Le Japon est aussi appelé :', "toujours pour 1 point", "question_3", $id,
+      [
+        [
+          "value" => "0",
+          "content" => "L'empire du milieu",
+        ],
+        [
+          "value" => "0",
+          "content" => "Les terres du milieu",
+        ],
+        [
+          "value" => "0",
+          "content" => "L'archipel du pacifique",
+        ],
+        [
+          "value" => "1",
+          "content" => "Le pays du soleil levant",
+        ],
+      ]);
+      $id += 4;
+      echo createSelectradio('Parmis les agglomerations les plus peuplées du monde, Tokyo occupe :', "Pour 2 points", "question_4", $id,
+      [
+        [
+          "value" => "2",
+          "content" => "La 1ère place",
+        ],
+        [
+          "value" => "0",
+          "content" => "La 2ème place",
+        ],
+        [
+          "value" => "0",
+          "content" => "La 4ème place",
+        ],
+        [
+          "value" => "0",
+          "content" => "La 11ème place",
         ],
       ]);
       $id += 4;

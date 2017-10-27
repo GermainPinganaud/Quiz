@@ -1,12 +1,12 @@
 body {
-  margin-left: 100px;
+  margin-left: 200px;
   color: grey;
   background-color: black;
   font-family: 'Gochi Hand', cursive;
-  font-size: 3em;
+  font-size: 2em;
 }
 input {
-  margin-left: 50px;
+  margin-left: 100px;
 }
 .red_o {
   color: #B92124;
